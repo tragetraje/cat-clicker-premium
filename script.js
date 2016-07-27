@@ -1,28 +1,33 @@
 var Barsik = {
   name: "Barsik",
   img: "http://www.catsofaustralia.com/images/freaked_out_kitten.jpg",
-  count: 0
+  count: 0,
+  clickId: name + "Counter"
 };
 
 var Murka = {
   name: "Murka",
   img: "http://www.catsofaustralia.com/images/kitten_10.jpg",
-  count: 0
+  count: 0,
+  clickId: name + "Counter"
 };
 var Kuzya = {
   name: "Kuzya",
   img: "http://www.catsofaustralia.com/images/cute_baby_kitten.jpg",
-  count: 0
+  count: 0,
+  clickId: name + "Counter"
 };
 var Yashka = {
   name: "Yashka",
   img: "http://www.catsofaustralia.com/images/scary_kitten.jpg",
-  count: 0
+  count: 0,
+  clickId: name + "Counter"
 };
 var Dymka = {
   name: "Dymka",
   img: "http://www.catsofaustralia.com/images/monti_relaxed.jpg",
-  count: 0
+  count: 0,
+  clickId: name + "Counter"
 };
 
 var catArray = [Barsik, Murka, Kuzya, Yashka, Dymka];
@@ -43,6 +48,7 @@ for (var i = 0; i < catArray.length; i++) {
 
   var counter = document.createElement('p');
   counter.textContent = cat.count;
+  counter.id = cat.clickId;
 
   var img = document.createElement('img');
   img.src = cat.img;
@@ -54,6 +60,7 @@ for (var i = 0; i < catArray.length; i++) {
         return function() {
             catCopy.count++;
             console.log(catCopy.name + ': ' + catCopy.count);
+            document.getElementById(catCopy.clickId).textContent = catCopy.count;
         };
     })(cat));
 
