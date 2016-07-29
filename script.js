@@ -1,36 +1,30 @@
-var Barsik = {
+var catArray = [{
   name: "Barsik",
   img: "http://www.catsofaustralia.com/images/freaked_out_kitten.jpg",
   count: 0,
   clickId: "barsikCounter"
-};
-
-var Murka = {
+}, {
   name: "Murka",
   img: "http://www.catsofaustralia.com/images/kitten_10.jpg",
   count: 0,
   clickId: "murkaCounter"
-};
-var Kuzya = {
+}, {
   name: "Kuzya",
   img: "http://www.catsofaustralia.com/images/cute_baby_kitten.jpg",
   count: 0,
   clickId: "kuzyaCounter"
-};
-var Yashka = {
+}, {
   name: "Yashka",
   img: "http://www.catsofaustralia.com/images/scary_kitten.jpg",
   count: 0,
   clickId: "yashkaCounter"
-};
-var Dymka = {
+}, {
   name: "Dymka",
   img: "http://www.catsofaustralia.com/images/monti_relaxed.jpg",
   count: 0,
   clickId: "dymkaCounter"
-};
+}];
 
-var catArray = [Barsik, Murka, Kuzya, Yashka, Dymka];
 
 for (var i = 0; i < catArray.length; i++) {
 
