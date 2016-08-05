@@ -22,5 +22,5 @@
 
 ### Scripts
 
-- See script.js for original implementation
-- The code refactored with Separation of Concerns mvo.js
+- See **script.js** for original implementation
+- The code refactored with Separation of Concerns **mvo.js**
